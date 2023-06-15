@@ -12,6 +12,14 @@ module MyEnumerable
         end
         false
       end
+    
+      def filter
+        result = []
+        self.each do |e|
+          result << e if yield(e)
+        end
+        result
+      end
  
   end
   
