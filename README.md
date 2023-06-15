@@ -28,7 +28,7 @@
 
 # 📖 My Enumerables <a name="about-project"></a>
 
-**My Enumerables** "In this project, I have used IRB of Ruby to make a method that decodes Morse Code. This project was done using Command Line of Ruby i.e IRB"
+**My Enumerables** "In this project you will learn how to use a module inside your class. For this you will create a class MyList and a module MyEnumerable. Your module MyEnumerable will implement a subset of the functionality of Enumerable."
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -67,9 +67,9 @@ Ruby
 
 ### Setup
 
-git clone 
+git clone https://github.com/Metaverse-Nabeel/MyEnumerables.git
 
-cd 
+cd MyEnumerables
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
