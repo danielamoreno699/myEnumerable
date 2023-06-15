@@ -1,10 +1,19 @@
 #all?
 #any?
 #filter
+module my_enumerable
+    
+    def all?
+       
+    end
 
-def all_method?(arr)
-  arr.each do |ele|
-    return false if !yield(ele)
-  end
-  true
+    def any?
+        
+    end
+
+    def filter
+        
+    end
+
+
 end

@@ -1,8 +1,18 @@
+require_relative 'my_enumerable'
+
+# Create our list
 class MyList
+
   def initialize
     @list = []
   end
+
+  
+
 end
+
+
+
 
 
 # Create our list
