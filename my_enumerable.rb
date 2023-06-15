@@ -5,6 +5,13 @@ module MyEnumerable
       end
       true
     end
+
+    def any?
+        self.each do |e|
+          return true if yield(e)
+        end
+        false
+      end
  
   end
   
