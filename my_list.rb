@@ -19,4 +19,4 @@ puts(list.all? { |e| e < 5 }) # Output: true
 puts(list.all? { |e| e > 5 }) # Output: false
 puts(list.any? { |e| e == 2 }) # Output: true
 puts(list.any? { |e| e == 5 }) # Output: false
-p list.filter(&:even?)   # Output: [2, 4]
+p list.filter(&:even?) # Output: [2, 4]
