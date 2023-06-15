@@ -1,8 +1,7 @@
-
 # Create module that contains functions of Enumerable
 
 module MyEnumerable
-# Implement all function
+  # Implement all function
   def all?
     each do |e|
       return false unless yield(e)
@@ -10,7 +9,7 @@ module MyEnumerable
     true
   end
 
-# Implement any function
+  # Implement any function
   def any?
     each do |e|
       return true if yield(e)
@@ -18,7 +17,7 @@ module MyEnumerable
     false
   end
 
-# Implement filter function
+  # Implement filter function
   def filter
     result = []
     each do |e|

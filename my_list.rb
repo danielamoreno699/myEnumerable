@@ -7,7 +7,7 @@ class MyList
 
   include MyEnumerable
 
-# Implement each method
+  # Implement each method
   def each(&block)
     @list.each(&block)
   end
