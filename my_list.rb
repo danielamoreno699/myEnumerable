@@ -1,30 +1,21 @@
 require_relative 'my_enumerable'
 
-# Create our list
 class MyList
-
-  def initialize
-    @list = []
+  def initialize(*elements)
+    @list = elements
   end
 
-  
+  include MyEnumerable
 
+  def each
+    @list.each { |e| yield(e) }
+  end
 end
 
-
-
-
-
-# Create our list
 list = MyList.new(1, 2, 3, 4)
 
-# Test #all?
-list.all? {|e| e < 5} # => true
-list.all? {|e| e > 5}#=> false
-
-# Test #any?
- list.any? {|e| e == 2} #=> true
-list.any? {|e| e == 5} #=> false
-
-# Test #filter
-list.filter {|e| e.even?} #=> [2, 4]
+puts list.all? { |e| e < 5 }    # Output: true
+puts list.all? { |e| e > 5 }    # Output: false
+puts list.any? { |e| e == 2 }   # Output: true
+puts list.any? { |e| e == 5 }   # Output: false
+puts list.filter { |e| e.even? } # Output: [2, 4]
